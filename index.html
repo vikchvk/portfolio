@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: blueviolet;
+        --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+      }
+      h1 {
+        color: var(--primary-color);
+        box-shadow: var(--box-shadow);
+      }
+      .cities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My portfolio</h1>
+    <a href="about.html">About me</a>
+    <a href="mailto:vchvykova@gmail.com">email</a>
+    <br />
+    <a href="work.html">My work</a>
+    <br />
+    <a href="blog/trip.html">My trip</a>
+    <a href="#important">a link</a>
+    <a href="about.html#faq">FAQ</a>
+    <h2 id="important">this is important</h2>
+
+    <div class="cities">
+      <div>Paris</div>
+      <div>Lisbon</div>
+      <div>Kyiv</div>
+    </div>
+  </body>
+</html>
