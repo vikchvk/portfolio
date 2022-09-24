@@ -3,6 +3,7 @@
   --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -22,6 +23,9 @@ h6 {
 h1 {
   font-size: 96px;
 }
+h2 {
+  font-size: 64px;
+}
 
 .hero h3 {
   font-family: var(--heading-font-family);
@@ -30,7 +34,9 @@ h1 {
 }
 
 p {
+  padding: 30px;
   font-weight: normal;
+  font-size: 16px;
 }
 
 .hero {
@@ -44,12 +50,45 @@ p {
   margin: 0;
   line-height: 2;
 }
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
 
-.btn-branding {
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.contact-link {
   background: var(--primary-color);
   border-radius: 4px;
   color: white;
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
+}
+.primary-link {
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 20px;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .yogurt,
+  .weather,
+  .yoga {
+    display: none;
+  }
 }
